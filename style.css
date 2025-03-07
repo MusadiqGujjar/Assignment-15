@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Mrs+Sheppards&family=Puppies+Play&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Mrs+Sheppards&family=Puppies+Play&family=Sofia&family=UnifrakturMaguntia&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.section {
+    height: 100vh; 
+}
+
+body {
+    background-image: url('./images/armando-ascorve-morales-jEXR62jw34Y-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: black;
+        padding: 15px 20px;
+        display: flex;
+        position: fixed;
+        width: 100%; 
+        height: 70px; 
+        z-index: 1000; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+.navbar a{
+    font-size: 15px;
+    line-height: 1.4;
+    color:aliceblue;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #FF9800;
+}
+
+.navbar span{
+    color: #D32F2F;
+    cursor:text;
+    font-weight: bold;
+}
+
+.register-btn{
+    margin-left: 1200px;
+    width: 160px;
+    height: 40px;
+    border-radius: 70px;
+    border: none;
+    background-color: #D32F2F;
+    color: aliceblue;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px 5px rgba(234, 1, 1, 0.377);
+}
+
+.register-btn:hover{
+    color:black;
+    background-color: #FF9800;
+    box-shadow: 0px 0px 10px 5px rgba(241, 109, 2, 0.582);
+
+}
+
+.navbar a img{
+    padding-left: 290px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.logo img{
+    max-width: 280px;
+    height: auto;
+}
+
+.dropdown {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000000;
+    padding-left: 50px;
+
+}
+
+.dropdown a{
+    padding-left: 160px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height:140px;
+    padding: 5px;
+    border-radius: 3px;
+    columns: 1;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a{
+    display: flex;
+    font-weight:200;
+    text-decoration: none;
+    color: black;
+    padding: 1px 11px 10px 10px;
+}
+
+.dropdown-content a:hover{
+    color:#FF9800;
+}
+
+.intro-head h2{
+    font-family: "Great Vibes", cursive;
+    font-size: 60px;
+    font-weight: 100px;
+    color: aliceblue;
+    padding-top: 160px;
+    text-align: center;
+    transition: color 0.4s ease-in-out;
+}
+
+.intro-head h2:hover{
+    color: #FF9800;
+}
+
+h2 span{
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-size: 50px;
+  font-style: italic;
+  color: #db0000;
+}
+
+.text h1{
+    font-family: "IBM Plex Sans", sans-serif;   
+    font-size: 60px;
+}
+
+.text{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 50px;
+    font-family: "Sofia", cursive;
+}
+
+.text button{
+    margin-top: 25px;
+    color: aliceblue;
+    background-color:#D32F2F;
+    box-shadow: 0px 0px 10px 5px rgba(234, 1, 1, 0.377);
+    width: 156px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.text button:hover{
+    color: #1C1C1C ;
+    background-color: #FF9800;
+    box-shadow: 0px 0px 10px 5px rgba(241, 109, 2, 0.582);
+    width: 157px;
+    height: 37px;
+
+}
+
+.main{
+    display: inline;
+    margin-top: 100px;
+    background-color: #000000 ;
+    width: 100%;
+    height: 850px;
+    color: aliceblue;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+}
+
+.main h3{
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    font-weight: 20;
+    color: #e73b3b;
+    padding-top: 80px;
+}
+
+.main h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    font-family: "IBM Plex Sans", sans-serif;   
+    font-size: 50px;
+    font-weight: 30;
+
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.main-content {
+    border-radius: 4px;
+    box-shadow: 0px 0px 19px rgba(234, 1, 1, 0.377);
+    padding-bottom: 10px;
+    background-color:#2e2020;
+    width: 28%;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.main-content img {
+    width: 100%;
+    height: auto;
+    overflow-wrap: anywhere;
+}
+
+.main-content h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.main-content p {
+    color: aliceblue;
+    font-size: 14px;
+    padding: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+.order-btn {
+    background-color:#D32F2F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px 3px rgba(234, 1, 1, 0.377);
+}
+.order-btn:hover {
+    background-color:#FF9800;
+    box-shadow: 0px 0px 10px 3px rgba(241, 109, 2, 0.582);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-1{
+    background-color:#1C1C1C ;
+    margin-top: 1600px;
+    width: 100%;
+    height: 850px;
+    color: aliceblue;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+}
+
+.main-1 h3{
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    font-weight: 20;
+    color: #e73b3b;
+    padding-top: 80px;
+}
+
+.main-1{
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    font-family: "IBM Plex Sans", sans-serif;   
+    font-size: 30px;
+    font-weight: 20;
+
+}
+
+.container-1 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.main-2{
+    background-color:#000000 ;
+    margin-top: 3000px;
+    width: 100%;
+    height: 800px;
+    color: aliceblue;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+}
+
+.main-2 h3{
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    font-weight: 20;
+    color: #e73b3b;
+    padding-top: 80px;
+}
+
+.main-2{
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    font-family: "IBM Plex Sans", sans-serif;   
+    font-size: 30px;
+    font-weight: 20;
+
+}
+
+.container-2 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+footer{
+    display: flex;
+    position: absolute;
+    background-color: #1C1C1C;
+    color: aliceblue;
+    margin-top: 3800px;
+    width: 100%;
+    height: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-logo {
+    width: 50%;
+}
+
+.footer-logo img {
+    width: 180px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #ccc;
+    padding-left: 100px;
+}
+
+.footer-links {
+    margin-top: 10px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu h3, .blog h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.menu ul, .blog ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li, .blog ul li {
+    margin-bottom: 8px;
+}
+
+.menu ul li a, .blog ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover, .blog ul li a:hover {
+    color: #ffc107;
+}
+
+.footer-newsletter {
+    width: 25%;
+}
+
+.newsletter-box {
+    display: flex;
+    margin: 10px 0;
+}
+
+.newsletter-box input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.subscribe-btn {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}
